@@ -56,8 +56,8 @@ app.get('/weather', (req, res) => {
     
         temperature(lattitude, longitude, (err, tempData) => {
             if (err) return res.send({error: err})
-            
-            const tempResponse = `It's ${tempData.temp} now and it feels like ${tempData.feelslike}`
+
+            const tempResponse = `The weather is ${tempData.weatherDescriptions}. It's ${tempData.temp} now and it feels like ${tempData.feelslike}. Humidity is ${tempData.humidity}.`
             return res.send({
                 placeName, 
                 tempResponse

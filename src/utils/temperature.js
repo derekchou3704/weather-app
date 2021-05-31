@@ -17,7 +17,9 @@ const temperature = (lattitude, longitude, callback) => {
         } else {
             callback(undefined, {
                 temp: body.current.temperature,
-                feelslike: body.current.feelslike
+                feelslike: body.current.feelslike,
+                weatherDescriptions: body.current.weather_descriptions,
+                humidity: body.current.humidity
             })
         }
     })
