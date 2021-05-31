@@ -1,5 +1,3 @@
-console.log('Clientside javascript is loaded!')
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const msgOne = document.querySelector('#msg-1')
@@ -23,7 +21,4 @@ weatherForm.addEventListener('submit', (e) => {
             }
         })
     })
-
-    // console.log('testing!')
-    // console.log(location)
 })
