@@ -40,3 +40,20 @@ header a {
 #kakashi {
     width: 250px;
 }
+
+form {
+    margin: 16px;
+}
+
+input {
+    border: 1px solid #ccffcc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #88cc88;
+    background: #88cc88;
+    color: whitesmoke;
+    padding: 8px;
+}
